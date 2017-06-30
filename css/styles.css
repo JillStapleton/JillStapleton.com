@@ -1,0 +1,234 @@
+/*****************************************************
+
+    Title
+
+    Colors: 
+
+    5 Shades of Gray: Hue 215, Saturation 10% and various Brighness
+				black 			(215, 10%, 5%)
+				gray - dark 	(215, 10%, 20%)
+				gray - med 		(215, 10%, 40%)
+				gray - light 	(215, 10%, 60%)
+    			white 			(215, 10%, 95%)
+
+    Complimentary: 4 Hues - including 215 at various Saturation and Brightness
+    Main: 		dark blue 		(215, 50%, 30%)
+    Accent 1: 	light green 	(160, 20%, 60%)
+    Accent 2: 	taupe 			(5, 25%, 50%)
+    Accent 3: 	burgundy 		(340, 60%, 20%)
+
+    Brights: The same 4 Hues from Complimentary, at 100% Saturation and 75% Brightness
+    Bright Main:	blue 		(215, 100%, 75%)
+    Bright 1: 		green 		(160, 100%, 75%)
+    Bright 1: 		Red 		(5, 100%, 75%)
+    Bright 1: 		Pink 		(340, 100%, 75%)
+
+****************************************************/
+/*----------------------------------------------
+	Color Variables
+------------------------------------------------*/
+
+:root {
+	/*Shades of Gray*/
+	--black:hsl(215, 10%, 5%);
+	--gray-dark:hsl(215, 10%, 20%);
+	--gray-med:hsl(215, 10%, 40%);
+	--gray-light:hsl(215, 10%, 60%);
+	--white:hsl(215, 10%, 95%);
+
+	/*Complimentary*/
+	--main-color:hsl(215, 50%, 30%);
+	--accent1:hsl(160, 20%, 60%);
+	--accent2:hsl(5, 25%, 50%);
+	--accent3:hsl(340, 60%, 20%);
+
+	/*Brights*/
+	--main-bright:hsl(215, 100%, 75%);
+	--bright1:hsl(160, 100%, 75%);
+	--bright2:hsl(5, 100%, 75%);
+	--bright3:hsl(340, 100%, 75%);
+}
+
+/*----------------------------------------------
+	Section separtors with descriptions
+------------------------------------------------*/
+
+/*----------------------------------------------
+	Default styling for all content
+------------------------------------------------*/
+
+/*----------------------------------------------
+	Base: styles by simple html element
+
+Contains:
+body, header, nav, main, footer
+h1, h2, h3, h4, h5, h6, p, ol, ul, 
+section, article, aside, li
+img, a, a:active, a:hover, a:focus,  
+
+Not yet used:
+figure, figcaption, 
+form, label, input, textarea, 
+------------------------------------------------*/
+body {
+
+}
+
+header{
+	background-color: var(--main-color);
+	color: var(--white);
+	padding: 1em;
+	margin-bottom: 0;
+
+}
+
+nav {
+	background-color: var(--main-color);
+	color: var(--white);
+	text-align: right;
+	margin-top:0;
+
+}
+
+
+main {
+
+}
+
+footer {
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+}
+
+p {
+
+}
+
+ol, ul {
+
+}
+
+img {
+
+}
+
+a {
+  
+}
+
+a:active{
+
+}
+
+a:hover{
+  color: var(--main-bright);
+
+}
+
+a:focus{
+
+}
+
+/*----------------------------------------------
+	class styles
+
+	class list: 
+	nav-bar: navigation bar
+------------------------------------------------*/
+
+/*----------------------------------------------
+                     nav
+------------------------------------------------*/
+
+.nav-bar {
+  list-style-type: none;
+  display:inline;
+  padding-right:.5em;
+}
+
+.nav-bar a {
+  color: var(--white);
+}
+
+.nav-bar a:hover {
+  color: var(--main-bright);
+
+}
+
+/*****************************************************
+    Colors: this section for design purposes - to be deleted later
+
+****************************************************/
+
+
+.swatch-block {
+	display: inline-block;
+    padding: 2em;
+ 
+}
+
+.black{
+	color: var(--white);
+	background-color: var(--black);
+}
+
+.gray-dark{
+	color: var(--white);
+	background-color: var(--gray-dark);
+}
+
+.gray-med{
+	color: var(--white);
+	background-color: var(--gray-med);
+}
+
+.gray-light{
+	background-color: var(--gray-light);
+}
+
+.white{
+	background-color: var(--white);
+
+}
+
+.main-color {
+	color: var(--white);
+    background-color: var(--main-color);
+}
+
+.accent1 {
+	color: var(--white);
+	background-color: var(--accent1);
+}
+
+.accent2 {
+	color: var(--white);
+	background-color: var(--accent2);
+}
+
+.accent3 {
+	color: var(--white);
+	background-color: var(--accent3);
+}
+
+.main-bright {
+	color: var(--white);
+	background-color: var(--main-bright );
+}
+
+.bright1 {
+	background-color: var(--bright1);
+}
+
+.bright2 {
+	color: var(--white);
+	background-color: var(--bright2);
+}
+
+.bright3 {
+	color: var(--white);
+	background-color: var(--bright3);
+}
