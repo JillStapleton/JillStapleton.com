@@ -14,66 +14,248 @@
   ********************************************************* -->
   <body>
 
-    <header>
-    <!-- ******************************************************
+    <header> <!-- to do: -->
+      <!-- ******************************************************
   
                             Header
 
-    ********************************************************-->       
-        <h1>JS Busines and Web Services</h1>
+      *******************************************************-->   
+      <!-- to do: -->
+      <!-- make three pages and link them to the nav bar-->
+
+        <h1>Watsonator</h1>
+        <h4>because you need a sidekick.</h4>
 
       <nav>
-        <ul class="nav-bar">
-          <li class="nav-bar"><a href=#>Page 1</a></li>
-          <li class="nav-bar"><a href=#>Page 2</a></li>
-          <li class="nav-bar"><a href=#>Page 3</a></li>
+        <ul class="nav-bar"> 
+          <li class="nav-bar"><a href=#>Web</a></li>
+          <li class="nav-bar"><a href=#>Consulting</a></li>
+          <li class="nav-bar"><a href=#>Projects</a></li>
         </ul>
       </nav>
     </header>
     
 	<main>
-  <!-- ********************************************************
+    <!-- ********************************************************
    
                             Main Content
   
-  ********************************************************* --> 
+    ********************************************************* --> 
 
-  <div>
+  <section> <!-- Carousel Container --> <!-- to do: -->
     <!-- ********************************************************
         Feature slide show including background images and overlaid text with background 
     ********************************************************* -->  
-  </div>
+        <!-- to do: -->
+        <!-- make image overlays -->
+        <!-- change slide transition timing: slower -->
+        <!-- Optimize pictures: smaller file size -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- List of slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="images/bridge.jpg" alt="The bridge is out.">
+        </div>
+        <div class="item">
+          <img src="images/dam.jpg" alt="Fallen logs daming a stream.">
+        </div>
+        <div class="item">
+          <img src="images/hills.jpg" alt="Hills in the wine country.">
+        </div>
+        <div class="item">
+          <img src="images/sundown.jpg" alt="Sun and shadows on tall grasses.">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+
+  <section> <!-- block quote -->   
+    <div class="white"> 
+      <!-- ********************************************************
+          block quote: describes my buisness
+      ********************************************************* -->
+      <blockquote>
+        <h2>Small Business Services</h2>
+        Building capacity in small business with personalized web, consulting and project support.
+      </blockquote>
+    </div>
+  </section>
 
       
-  <div>
-    <!-- ********************************************************
-        block quote: describes my buisness
-    ********************************************************* -->  
-  </div>
-
-      
-  <div>
+  <section> <!-- service descriptions --> <!-- to do: -->
     <!-- ********************************************************
         services: list of services displayed as cards with centered graphic, title, and descriptive text
-    ********************************************************* -->  
-  </div>
+    ********************************************************* -->
+    <!-- to do: -->
+    <!-- Get, add and style icons for each card -->
 
-  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img ref=#> <!-- Future icon -->
+          <h3 class="card-headline">Web</h3>
+          <ol class="card-list">
+            <li><span class="card-list-title">Design:</span> Working together, we will create a delightful design that you love and your visitors find easy to use, whether they're on a computer, a tablet, or a phone. </li>
+            <li><span class="card-list-title">Code:</span> We will write the computer code to support your design. Depending on your needs, we will then provide you with the code, deploy the site to your host, or deploy the site on our own hosting servers.</li>
+            <li><span class="card-list-title">Maintenance:</span> We can also provide ongoing hosting and maintenance for your site.</li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <img ref=#> <!-- Future icon -->
+          <h3 class="card-headline">Consulting</h3>
+          <ol class="card-list">
+            <li><span class="card-list-title">Planning:</span> We can help with business plans, marketing plans, branding, strategy and change management.</li>
+            <li><span class="card-list-title">Process:</span> Rethink how you run your business and make it more effective with lean business processes and optimized systems. </li>
+            <li><span class="card-list-title">Intelligence:</span> Make data driven decisions by defining and tracking key business metrics, develop reporting that provides you with the information you need. Use intelligent historical sales and income and expense tracking to forecast and evaluate your progress, reduce waste, and amplify your strengths.</li>
+          </ol>
+        </div>
+        <div class="col-md-4">
+          <img ref=#> <!-- Future icon -->
+          <h3 class="card-headline">Projects</h3>
+          <ol class="card-list">
+            <li><span class="card-list-title">Change:</span> we can facilite business discussions that to evaluate all of the Organizational Change projects you're planning, estimate their costs and benefits, and prioritize them based on their business value. </li>
+            <li><span class="card-list-title">Planning:</span> Create individual project plans with clear objectives, scope, responsibilities, milestones, and cost estimates.</li>
+            <li><span class="card-list-title">Management:</span> Track progress, identify and overcome obstacles, minimize scope and cost over-run and finish what you've started: on time and on budget.</li>
+          </ol>
+        </div>
+      </div> 
+    </div>
+  </section>
+
+  <section class="white"> <!-- recent work --> <!-- to do: -->
     <!-- ********************************************************
         recent work: includes text card to the right, and small scrollable slideshow to the left
-      ********************************************************* -->  
-  </div>
+      ********************************************************* --> 
+      <!-- to do: -->
+      <!-- change carousel to two slides wide: -->
+      <!-- changes slide timing - slower -->
+      <!-- change pictures to actual projects (do actual projects) -->
+      <!-- Make portfolio page -->
+      <!-- add portfolio to nav bar-->
+      <!-- add view portfolio button -->
+      <!-- fix alignment with service descriptions section -->
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Recent Work</h3>
+            <p>
+            A selection of our latest projects. Please let us know if you have questions about these projects, or if you have something similar we could help you with.
+            </p>
+            <!-- Future: view portfolio button-->
+        </div><!-- ends the column -->
 
-  <div>
+        <div class="col-md-4">
+         <!-- ********************************************************
+          Recent Work slide show 
+          ********************************************************* -->  
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- List of slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/bridge.jpg" alt="The bridge is out.">
+              </div>
+              <div class="item">
+                <img src="images/dam.jpg" alt="Fallen logs daming a stream.">
+              </div>
+              <div class="item">
+                <img src="images/hills.jpg" alt="Hills in the wine country.">
+              </div>
+              <div class="item">
+                <img src="images/sundown.jpg" alt="Sun and shadows on tall grasses.">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div><!-- ends the column -->
+
+        <div class="col-md-4">
+          <!-- ********************************************************
+          Feature slide show including background images and overlaid text with background 
+          ********************************************************* -->  
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#myCarousel" data-slide-to="0"></li>
+            </ol>
+
+            <!-- List of slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/bridge.jpg" alt="The bridge is out.">
+              </div>
+              <div class="item">
+                <img src="images/dam.jpg" alt="Fallen logs daming a stream.">
+              </div>
+              <div class="item">
+                <img src="images/hills.jpg" alt="Hills in the wine country.">
+              </div>
+              <div class="item">
+                <img src="images/sundown.jpg" alt="Sun and shadows on tall grasses.">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div><!-- ends the column -->
+      </div> <!-- ends the row -->
+    </div><!-- ends the container -->
+  </section>
+
+  <section> <!-- call to action --><!-- to do: everything-->
     <!-- ********************************************************
         Call to Action: solicitation text and contact button
     ********************************************************* -->  
-  </div>
+  </section>
 
   </main>
   
-  <footer>
+  <footer><!-- to do: everything -->
    <!-- ********************************************************
   
                             Footer
@@ -86,7 +268,7 @@
   </footer>
 
   
-  <section class="javaScript">
+  <section class="javaScript"><!-- to do: everything -->
   <!-- ********************************************************
                            
                            javaScript 
@@ -100,7 +282,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </section>
 
-  <section class="swatch">
+  <section class="swatch"> <!-- to do: delete it when site is done -->
   <!-- ********************************************************
                            
                            color swatch
