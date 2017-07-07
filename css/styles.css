@@ -71,7 +71,6 @@ figure, figcaption,
 form, label, input, textarea, 
 ------------------------------------------------*/
 body {
- 
 
 }
 
@@ -79,6 +78,7 @@ header{
 	background-color: var(--main-color);
 	color: var(--white);
 	padding: 1em;
+	padding-left: 4em;
 }
 
 nav {
@@ -89,14 +89,21 @@ nav {
 
 
 main {
-	padding: 0 1em;
+	
 }
+
+section {
+	padding-bottom: 5em;
+	padding-top: 5em;
+}
+
 
 footer {
 
 }
 
 h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
 
 }
 
@@ -130,10 +137,9 @@ a:focus{
 }
 
 blockquote{
-	background-color: var(--white);
 	text-align: center;
 	width: 50%;
-	margin: auto;
+	margin: 0 auto;
 	border:none;
 
 }
@@ -164,10 +170,15 @@ blockquote{
 
 }
 
+
 .block-align-center {
 	margin: auto;
 	width: 75%;
 
+}
+
+.carousel-section{
+	padding: 0;
 }
 
 .card-headline {
@@ -187,6 +198,39 @@ blockquote{
 	font-weight: bold;
 	color:var(--accent3);
 }
+
+.contact{
+  background-color: var(--main-color);
+  color: var(--white);
+  list-style-type: none;
+  text-align:center;
+  padding: 2em;
+
+}
+
+.contact li{
+	display: inline;
+	padding: 1em;
+}
+
+.contact a {
+  color: var(--white);
+  text-decoration: underline;
+
+}
+.contact a:hover {
+  color: var(--main-bright);
+
+}
+
+#carousel-med {
+	max-width: 70%;
+	margin: 0 auto;
+
+}
+
+
+
 
 /*****************************************************
     Colors: this section for design purposes - to be deleted later
