@@ -1,8 +1,22 @@
 /*****************************************************
+     Title: Jill Stapleton - root styles for all jillstapleton.com pages
 
-    Title
+     Note that most styles are the root and index page styles, 
+     all other pages in the site have a smaller attached css stylesheet with page specific styles
 
+     Styling conventions:
+     1. Most styles are in the main css stylesheet. Page specific styles are separate
+     2. Naming convention: 
+     	a. custom classes bagin with a j: this helps me separate my own styling from the framework styling
+     	b. similarly, custom classes that trigger javascript actions begin with jj.
 ****************************************************/
+
+/*Colors*/
+
+  /*----------------------------------------------
+    Color Variables
+  ------------------------------------------------*/
+
 
 :root {
 		/*Shades of grey*/
@@ -30,67 +44,71 @@
 	body {
 		font-family: 'Raleway', sans-serif;
 		color:var(--grey-med);
-		border:5px dotted red;
 	}
 
 	header, footer{
-		border: 5px dotted orange;
 		background-color: var(--main-color);
 		color: var(--grey-light);
+	}
+	
+	header {
+		padding-top: 1em;
 	}
 
 	footer {
 		text-align: center;
+		padding-bottom: 1em;
 	}
 
-
-
-	main {
-		border:5px dotted yellow;
-	}
 
 /*classes and IDs*/
 	/*----------------------------------------------
 		class styles
 	------------------------------------------------*/
-  .jtextMuted {
-  	color:var(--grey-light);
-  }
+	  .jtextMuted {
+	  	color:var(--grey-light);
+	  }
 
-  .jnoList {
-  	list-style-type: none;
-  }
+	  .jnoList {
+	  	list-style-type: none;
+	  	padding-left:0; 
+	  }
 
-  .jlogo {
-  	max-width: 7em;
+	  .jlogo {
+	    min-width: 5em;
 
-  }
-
+	  }
 
 /*For checking my boxes*/
-.jborderRed {
-	border: 5px solid red;
-}
+	/*----------------------------------------------
+		border checking styles
+		- after doing my nine box exercise, I brought the border styles into my main css.
+		  I now use them a lot - whenever I'm making a new page and need to check to be sure everything is in the right place. 
+	------------------------------------------------*/
 
-.jborderOrange {
-	border: 5px solid red;
-}
+	.jborderRed {
+		border: 5px solid red;
+	}
 
-.jborderYellow {
-	border: 5px solid red;
-}
+	.jborderOrange {
+		border: 5px solid orange;
+	}
 
-.jborderGreen {
-	border: 5px solid red;
-}
+	.jborderYellow {
+		border: 5px solid yellow;
+	}
 
-.jborderBlue {
-	border: 5px solid red;
-}
+	.jborderGreen {
+		border: 5px solid green;
+	}
 
-.jborderPurple {
-	border: 5px solid red;
-}
+	.jborderBlue {
+		border: 5px solid blue;
+	}
+
+	.jborderPurple {
+		border: 5px solid purple;
+	}
 
 
 	

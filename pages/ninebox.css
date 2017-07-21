@@ -1,9 +1,14 @@
 /*****************************************************
-     Title: Jill Stapleton - Portfolio
-****************************************************/
+     Title: Jill Stapleton - Nine Box styles
+     
+     Note that most styles are inherited from my main css file, 
+     what you see here is just what's different frm the base styles page
 
-/*****************************************************
-     Title: Jill Stapleton - Portfolio
+     Styling conventions:
+     1. Most styles are in the main css stylesheet. Page specific styles are here
+     2. Naming convention: 
+     	a. custom classes bagin with a j: this helps me separate my own styling from the framework styling
+     	b. similarly, custom classes that trigger javascript actions begin with jj.
 ****************************************************/
 
 /*Colors*/
@@ -13,96 +18,44 @@
   ------------------------------------------------*/
 
 	:root {
-/*Shades of Grey*/
---black:hsl(40, 5%, 5%);
---grey-dark:hsl(40, 10%, 20%);
---grey-med:hsl(40, 10%, 40%);
---grey-light:hsl(40, 10%, 60%);
---white:hsl(40, 95%, 95%);
+		/*Shades of Grey*/
+		--black:hsl(40, 5%, 5%);
+		--grey-dark:hsl(40, 10%, 20%);
+		--grey-med:hsl(40, 10%, 40%);
+		--grey-light:hsl(40, 10%, 60%);
+		--white:hsl(40, 95%, 95%);
 
+		/*Main Color*/
+		--main-color:hsl(40, 80%, 20%);
+		--main-bright:hsl(40, 80%, 40%);
+		--main-muted:hsl(40, 80%, 60%);
 
-
-/*Main Color*/
---main-color:hsl(40, 80%, 20%);
---main-bright:hsl(40, 80%, 40%);
---main-muted:hsl(40, 80%, 60%);
-
-
-
-/*Accent*/
---accent-color:hsl(305, 20%, 20%);
---accent-bright:hsl(305, 20%, 40%);
---accent-muted:hsl(305, 20%, 60%);
-
-
-
-	  }
+		/*Accent*/
+		--accent-color:hsl(305, 20%, 20%);
+		--accent-bright:hsl(305, 20%, 40%);
+		--accent-muted:hsl(305, 20%, 60%);
+	}
 
 /*base styles*/
 	/*----------------------------------------------
 	Base: styles by simple html element
 	------------------------------------------------*/
-	body {
-		font-family: 'Raleway', sans-serif;
-		color:var(--gray-med);
-	}
+
 	header, footer{
-		background-color: var(--main-color);
-		color:var(--grey-light);
 		padding: 1em;
-	
-	}
-
-	hr {
-		padding: 0;
-		margin: 0;
-	}
-
-	main {
-		padding:0 2em;
 	}
 
 /*nine-box styles*/
 	/*----------------------------------------------
-	styles for the nine-box layout (header, footer, asside, main plus 3 subs)
-		Note, as a convention:
-		- I begin all custom classes with 'j' 
-		- all custom classes that are used by my custom javascript are 'jjs'
-		this helps me to separate what is my own styling from what is bootstrap or other framework styling
+	classes specific to the nine-box layout (header, footer, asside, main plus 3 subs)
 	------------------------------------------------*/
-
-
 
 	.jnine-box {
 		background-color: var(--white) ;
 	}
 
-	.jredborder {
-		border: 4px solid red;
-	}
-
-	.jorangeborder {
-		border: 4px solid orange;
-	}	
-
-	.jyellowborder {
-		border: 4px solid yellow;
-	}
-
-	.jgreenborder {
-		border: 4px solid green;
-	}
-
-	.jlightgreenborder {
+	.jborderLightGreen {
 		border: 4px solid lightgreen;
-	}
-
-	.jblueborder {
-		border: 4px solid blue;
-	}
-
-	.jpurpleborder {
-		border: 4px solid purple;
 	}
 	
 	.jtinytext {
@@ -110,93 +63,3 @@
 	}
 
 
-
-
-/*class styles*/
-	/*----------------------------------------------
-	classes
-		Note, as a convention:
-		- I begin all custom classes with 'j' 
-		- all custom classes that are used by my custom javascript are 'jjs'
-		this helps me to separate what is my own styling from what is bootstrap or other framework styling
-	------------------------------------------------*/
-
-
-}
-/*ID styles*/
-	/*----------------------------------------------
-	Ids
-	------------------------------------------------*/
-
-
-/*color swatch*/
-  /*****************************************************
-      Colors: this section for design purposes - to be deleted later
-
-  ****************************************************/
-  
-
-  .swatch-text {
-  	padding: 0.5em;
-    color: var(--black);
-    text-align: center;
-   }
-
-  .swatch-block {
-	padding: 2em;
-    color: var(--black);
-    text-align: center;
-    vertical-align: bottom;
-   }
-
-  .black{
-    color: var(--white);
-    background-color: var(--black);
-  }
-
-  .grey-dark{
-    color: var(--white);
-    background-color: var(--grey-dark);
-  }
-
-  .grey-med{
-    color: var(--white);
-    background-color: var(--grey-med);
-  }
-
-  .grey-light{
-    background-color: var(--grey-light);
-  }
-
-  .white{
-    background-color: var(--white);
-  }
-
-  .main-color {
-    color: var(--white);
-      background-color: var(--main-color);
-  }
-
-  .main-bright {
-    color: var(--black);
-    background-color: var(--main-bright);
-  }
-
-  .main-muted {
-    color: var(--black);
-    background-color: var(--main-muted);
-  }
-
-  .accent-color {
-    color: var(--white);
-    background-color: var(--accent-color);
-  }
-
-  .accent-muted {
-    color: var(--white);
-    background-color: var(--accent-muted );
-  }
-
-  .accent-bright {
-    background-color: var(--accent-bright);
-  }

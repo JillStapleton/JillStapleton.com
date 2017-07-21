@@ -1,0 +1,108 @@
+/*****************************************************
+     Title: Jill Stapleton - tools styles
+     
+     Note that most styles are inherited from my main css file, 
+     what you see here is just what's different frm the base styles page
+
+     Styling conventions:
+     1. Most styles are in the main css stylesheet. Page specific styles are here
+     2. Naming convention: 
+     	a. custom classes bagin with a j: this helps me separate my own styling from the framework styling
+     	b. similarly, custom classes that trigger javascript actions begin with jj.
+
+****************************************************/
+
+/*Colors*/
+
+  /*----------------------------------------------
+    Color Variables
+  ------------------------------------------------*/
+
+	:root {
+		/*Shades of Grey*/
+		--black:hsl(90, 5%, 5%);
+		--grey-dark:hsl(90, 10%, 20%);
+		--grey-med:hsl(90, 10%, 40%);
+		--grey-light:hsl(90, 10%, 60%);
+		--white:hsl(90, 30%, 95%);  /*Saturation changed on white, do not use for copy and paste styling*/
+
+		/*Main Color*/
+		--main-color:hsl(90, 30%, 30%); /*Lightness changed on the main color, do not use for copy and paste styling*/
+		--main-bright:hsl(90, 30%, 40%);
+		--main-muted:hsl(90, 30%, 80%);
+
+		/*Accent*/
+		--accent-color:hsl(200, 30%, 20%);
+		--accent-bright:hsl(200, 30%, 40%);
+		--accent-muted:hsl(200, 30%, 80%);
+	}
+
+/*base styles*/
+	/*----------------------------------------------
+	Base: styles by simple html element
+	------------------------------------------------*/
+
+	body{
+	
+		background-color: var(--white);
+	}
+
+   footer{
+		padding: 2.5%;
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		margin:0;
+	}
+
+/*tools styles*/
+	/*----------------------------------------------
+	classes specific to the tools page
+	------------------------------------------------*/
+	.jfeature{
+		background-image: url("../images/ricky-kharawala-308072-2000-hcrop.jpg");
+   		background-repeat: no-repeat;
+   		color:var(--white);
+   		padding:1em;
+	}
+
+	.jfeatureMain{
+		padding: 10% 0;
+	}
+	 
+	.jmakeFlex{
+		display: flex;
+	}
+
+    .jitemBottom{
+		align-self:flex-end;
+		padding: 0 1em;
+    }
+
+
+    .jitemGrow{
+		align-self:center;
+		flex-grow: 1;
+    }
+
+    .jrowOdd:first-child{
+        margin-top: 1em;
+
+    }
+
+    .jrowOdd{
+		background-color:var(--main-muted);
+		padding:1em;
+		border-bottom: 1px solid var(--main-color);
+    }
+
+    .jrowEven{
+		background-color:var(--grey-light);
+		padding:1em;
+		border-bottom: 1.5px solid var(--main-color);
+		text-align: right;
+    }
+
+
+
+

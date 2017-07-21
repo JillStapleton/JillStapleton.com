@@ -10,6 +10,7 @@
 	  <!--My font, from Google-->
 	  <link href="https://fonts.googleapis.com/css?family=Raleway:100,400" rel="stylesheet">
    	  <!--My css-->
+   	  <link rel="stylesheet" href="../css/styles.css">
       <link rel="stylesheet" href="ninebox.css">
   	  <!-- ********************************************************
          A character sheet for the Call of Cthulhu RPG - version 7
@@ -20,54 +21,58 @@
 	<!-- ********************************************************
          A simple nine box layout
   	  ******************************************************** -->    
-	 <section class="container jnine-box jredborder">
+	 <section class="container jnine-box jborderRed">
 	   
-	   <header class = "row jorangeborder"><!-- horizontal header -->
+	   <header class = "row jborderOrange"><!-- horizontal header -->
 	     <div class = "col-sm-12">
 	       <h1>The Nine Box Exercise</h1>
 	     </div>
 	   </header>
 	  
-	   <div class="row jyellowborder"> <!-- container for mid section --> 
+	   <div class="row jborderYellow"> <!-- container for mid section --> 
 		 	
-		  	<div class="container col-sm-9 jgreenborder"> <!--container for main/sub box-->
-		 	  <div class="row jblueborder"><!-- container for main -->
-			    <div class="col-sm-12 jpurpleborder"> 
+		  	<div class="container col-sm-9 jborderGreen"> <!--container for main/sub box-->
+		 	  <div class="row jborderBlue"><!-- container for main -->
+			    <div class="col-sm-12 jborderPurple"> 
 			      <h2>An experiment with bootstrap rows and containers</h2>
-			      <p>This was a really useful exercise for me in figuring out bootstrap rows and containers. I started with a basic design: a full width header and footer accross the top and bottom. In the middle, a block with a main article with three subs below on the left, an a sidebar on the right. All together, when I boxified it, I got nine boxes, so I'm calling it my nine box model, and the task of figuring it out was my nine box exercise..</p>
+			      <p>This was a really useful exercise for me in figuring out bootstrap rows and containers. I started with a basic design: a full width header and footer accross the top and bottom. In the middle, a block with a main article and three subs below on the left, and a sidebar on the right. All together, when I boxified it, I got nine boxes, so I'm calling it my nine box model, and the task of figuring it out was my nine box exercise..</p>
 			    </div>
 			  </div><!-- close main -->
 
-			    <div class ="row jblueborder"><!-- container for sub articles -->
-				    <div class="col-sm-4 jpurpleborder"><!-- sub -->
+			    <div class ="row jborderBlue"><!-- container for sub articles -->
+				    <div class="col-sm-4 jborderPurple"><!-- sub -->
 				      <h3>The Task</h3>
 				      <p>Build a page that mimics this one. The header and footer should extend accross 12 columns, the middle should be broken up into a sidebar, a main article, and three sub articles below it. All sections should take their full space, and all margins should nest neatly inside of each other. </p>
 				    </div>
-				    <div class="col-sm-4 jpurpleborder"><!-- sub -->
+				    <div class="col-sm-4 jborderPurple"><!-- sub -->
 				      <h3>How I did it</h3>
 				      <p>It seemed like it was going to be pretty easy, I thought I understood how rows and columns worked. Turns out... not so much. I started by boxifying the layout and translating that into an HTML skeleton, and I included a reference to the bootsrap <a href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">CDN</a> in my header. Then I added some text to see where it showed up and things looked pretty good... then I looked closer. See the sidebar for the things I screwed up and how I fixed them.</p>
 				    </div>
-				    <div class="col-sm-4 jpurpleborder"><!-- sub -->
+				    <div class="col-sm-4 jborderPurple"><!-- sub -->
 				      <h3>Why I did it</h3>
-				      <p>I'm learning. I've been taking various front end software courses, and I can do the exercises that they're presenting me with, but there's something to be said for trying to make it up yourself. So, I'm starting to just see what I can do. I hope that publishing the exercises and the results will be useful to others. I'm finding the help I see from google searches to be awesome, but sometimes not quite at my (elementary) level.</p>
+				      <p>I'm learning. I've been taking various front end software courses, and I can do the exercises that they're presenting me with, but there's something to be said for trying to make it up yourself. So, I'm starting to just see what I can do. I hope that publishing the exercises and the results will be useful to others. I'm finding the help I see from google searches to be awesome, but sometimes the answer to one tiny question doest't help make sense of the whole.</p>
 				    </div>
 			    </div><!-- close sub -->
 			</div><!--close main/sub box-->
 			
-			    	<div class="col-sm-3 jlightgreenborder"><!-- container for side bar -->
+			    	<div class="col-sm-3 jborderLightGreen"><!-- container for side bar -->
 				      <h3>Things I learned</h3>
 				      <p>I thought, of course, that this was going to be easy... but not so much. Spoiler alert! What follows is a list of things that I had to figure out. Try it yourself before reading this, and then maybe just peak at one thing at a time to see if it helps. The text below tiny. To see it - either change the size in dev tools, or copy and paste it into a text document. If you do it in dev tools, you can do one item at a time.</p>
 				      
-				      <h4>Label your HTML</h4>
+				      <h4>Hint 1</h4>
+				      <h4 class="jtinytext">Label your HTML</h4>
 				      <p class="jtinytext">Nesting divs are crazy confusing. Label your div start and ends with comments. This side bar, for example, has "container for side bar" after the open div and "close container for side bar" after the closing tag. This especially heled when I started moving things around. My first problem was that I couldn't get this side bar on the side - so I moved it a lot.</p>
-
-					  <h4>Use Borders </h4>
+						
+					  <h4>Hint 2</h4>
+					  <h4 class="jtinytext">Use Borders </h4>
 				      <p class="jtinytext">Make colored borders, so you can see what's happening and where. I've left them on so you can see. the red border is the container for the whole page, and then I go in rainbow order. Orange for the header and footer, yellow for the mid section, green for the to big boxes in the mid section, blue for the two parts of the main/sub box, and purple for the individual parts of the main/sub box. It took a while to get the borders to show up. I've been messing up on borders a lot lately, so I had to take a detour to figure out what I was doing wrong. Turns out, I was leaving out the border style; ".jredborder {border: 4px  red}" doesn't work ".jborder {4px solid red}" does. I created a rainbow of border classes: .jredborder, .jorangeborder, etc. By applying that class to different HTML elements, I was able to see where things were going awry.</h4></p>
 				      
-				      <h4>Containers vs Rows</h4>
+				      <h4>Hint 3</h4>
+				      <h4 class="jtinytext">Containers vs Rows</h4>
 				      <p class="jtinytext">This was probably in some of my classes.... but I sure don't remember it. I knew that I had to use a container to hold the whole page... but I didn't know I needed them within the page. Turns out, any place you have a box that needs more than one row (the main/sub box, for example) you need a container first, and then rows inside.  This layout has two containers - on for the whole page (red border), and one for the main article and three subs (dark green border). The other mistake I made here, was not having enough rows. For the main article, I tried to use the same div to hold the row and the columns... that didn't work. I didn't really think it would, but I tested it anyway.</p>
 				      
-				      <h4>How many Columns?</h4>
+				      <h4>Hint 4</h4>
+				      <h4 class="jtinytext">How many Columns?</h4>
 				      <p class="jtinytext">The last thing I had to figure out was why I had extra space to the left of my sidebar. Turns out to be related to the rows and columns probelm above. The container (dark green border) is 9 columns, and the sidebar (light green border) is 3 columns. Inside the container, I had the main article labeld as 9 columns, and the three subs labeled as 3 columns. This was leaving a three column wide space begween the articles and the side bar. Because of the borders, I could see that the container (dark green) was taking up all of the space, but the columns (purple borders) inside weren't. I changed the columns to be 12 columns for the main, and 4 each of the subs, which fixed it. So, it turns out that each container has 12 columns.... I really don't think that was in any of my classes.... If it was, I totally didn't get it!</p>
 				      <h4>The End</h4>
 				      <p>So, There you have it. The task I made myself and how I screwed it all up and how I figured it out. I hope it helps!</p>
@@ -82,7 +87,7 @@
 
 
 
-	    <footer class="row jorangeborder"><!-- horizontal footer -->
+	    <footer class="row jborderOrange"><!-- horizontal footer -->
 	       <div class = "col-sm-12">
 	         <p>The things I'm learning - check out the rest of the story at <a href="http://jillstapleton.com">JillStapleton.com</a></p>
 	       </div>
