@@ -1,0 +1,208 @@
+/*****************************************************
+     Title: Jill Stapleton - root styles for all jillstapleton.com pages
+
+     Note that most styles are the root and index page styles, 
+     all other pages in the site have a smaller attached css stylesheet with page specific styles
+
+     Styling conventions:
+     1. Most styles are in the main css stylesheet. Page specific styles are separate
+     2. Naming convention: 
+     	a. custom classes begin with a j: this helps me separate my own styling from the framework styling
+     	b. similarly, custom classes that trigger javaScript actions begin with jj.
+****************************************************/
+
+/*Colors*/
+
+  /*----------------------------------------------
+    Color Variables
+  ------------------------------------------------*/
+
+
+:root {
+		/*Shades of grey*/
+		--black:hsl(215, 5%, 5%);
+		--grey-dark:hsl(215, 10%, 20%);
+		--grey-med:hsl(215, 10%, 40%);
+		--grey-light:hsl(215, 10%, 60%);
+		--white:hsl(215, 95%, 95%);
+
+		/*Main Color*/
+		--main-color:hsl(215, 50%, 20%);
+		--main-bright:hsl(215, 50%, 40%);
+		--main-muted:hsl(215, 50%, 60%);
+
+		/*Accent*/
+		--accent-color:hsl(160, 100%, 20%);
+		--accent-bright:hsl(160, 100%, 40%);
+		--accent-muted:hsl(160, 100%, 60%);
+	}
+
+/* base styles */
+	/*----------------------------------------------
+		Base: styles by simple html element
+	------------------------------------------------*/
+	* {
+		box-sizing: border-box;
+	}
+
+	body {
+		font-family: 'Raleway', sans-serif;
+		color:var(--grey-med);
+	}
+
+	header, footer{
+		background-color: var(--main-color);
+		color: var(--grey-light);
+	}
+	
+	header {
+		padding-top: 1em;
+	}
+
+	footer {
+		text-align: center;
+		padding-bottom: 1em;
+		margin-top:1em;
+	}
+
+	p{
+		text-align: justify;
+	}
+
+
+
+
+/*classes and IDs*/
+	/*----------------------------------------------
+		class styles
+	------------------------------------------------*/
+	  .jtextMuted {
+	  	color:var(--grey-light);
+	  }
+
+	  .jnoList {
+	  	list-style-type: none;
+	  	padding-left:0; 
+	  }
+
+	  .jlogo {
+	    min-width: 5em;
+
+	  }
+
+	  .card {
+	  }
+
+	  .card-title{
+	  	font-weight: bold;
+	  }
+
+	  .dark {
+	  	border-color:lightgrey;
+	  	padding-bottom: 1em;
+	  }
+
+/*For checking my boxes*/
+	/*----------------------------------------------
+		border checking styles
+		- after doing my nine box exercise, I brought the border styles into my main css.
+		  I now use them a lot - whenever I'm making a new page and need to check to be sure everything is in the right place. 
+	------------------------------------------------*/
+
+	.jborderRed {
+		border: 5px solid red;
+	}
+
+	.jborderOrange {
+		border: 5px solid orange;
+	}
+
+	.jborderYellow {
+		border: 5px solid yellow;
+	}
+
+	.jborderGreen {
+		border: 5px solid green;
+	}
+
+	.jborderBlue {
+		border: 5px solid blue;
+	}
+
+	.jborderPurple {
+		border: 5px solid purple;
+	}
+
+
+	
+/*media*/
+
+
+
+/*color swatch*/
+  /*****************************************************
+      Colors: this section for design purposes - to be deleted later
+  ****************************************************/
+  
+  .swatch-text {
+  	padding: 0.5em;
+    color: var(--black);
+    text-align: center;
+   }
+
+  .swatch-block {
+	padding: 2em;
+    color: var(--black);
+    text-align: center;
+    vertical-align: bottom;
+   }
+
+  .black{
+    color: var(--white);
+    background-color: var(--black);
+  }
+
+  .grey-dark{
+    color: var(--white);
+    background-color: var(--grey-dark);
+  }
+
+  .grey-med{
+    background-color: var(--grey-med);
+  }
+
+  .grey-light{
+    background-color: var(--grey-light);
+  }
+
+  .white{
+    background-color: var(--white);
+  }
+
+  .main-color {
+    color: var(--white);
+      background-color: var(--main-color);
+  }
+
+  .main-bright {
+    color: var(--black);
+    background-color: var(--main-bright);
+  }
+
+  .main-muted {
+    color: var(--black);
+    background-color: var(--main-muted);
+  }
+
+  .accent-color {
+    color: var(--white);
+    background-color: var(--accent-color);
+  }
+
+  .accent-muted {
+    background-color: var(--accent-muted );
+  }
+
+  .accent-bright {
+    background-color: var(--accent-bright);
+  }
